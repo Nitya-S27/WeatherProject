@@ -1,0 +1,101 @@
+<%- include("header") %>
+
+
+<div class="main-div">
+
+<!-- --------------------------------------LEFT-DIV------------------------------------- -->
+
+
+  <div class="left-div">
+    <h1>Weather Forecast</h1>
+    <h2 class="city"><%= nameOfCity %></h2>      
+    <h3><%= dateAndDay %></h3>
+    <img
+      class="img-1"
+      src="https://media.giphy.com/media/hqxBEtdNYVWIm0xxVk/giphy.gif"
+      alt="clouds"
+    />
+
+
+    <div class="content-display">      
+      <span class="temperature"><%= currentTemp %></span>
+      <span class="image">
+        <% if (imageSource) { %>
+          <img src=<%= imageSource %>  alt="" />
+        <% } %> 
+        </span>
+    </div>
+  </div>
+
+  <!-- ---------------------------------RIGHT-DIV------------------------------- -->
+
+  <div class="right-div">
+
+    <div class="input-field">
+      <form action="/" method="post">
+        <input type="text" id="inputArea" name="cityName" placeholder="Another City"  autocomplete="off"/>
+        <button type="submit" class="search-button btn btn-dark"><img src="/image/search.png" alt="">
+        </button>
+      </form>
+    </div>
+
+    <div class="wether-details">
+      <h3>Weather Details</h3>
+      <table>
+        <tr >
+          <td><label for="description">Weather :</label></td>
+          <td ><div id="description" class="information-div"><%= des %></div></td>
+        </tr>
+
+        <tr>
+          <td><label for="pressure">Pressure :</label></td>
+          <td><div id="pressure" class="information-div"><%= press %></div></td>
+        </tr>
+
+        <tr>
+          <td><label for="humidity">Humidity :</label></td>
+          <td><div id="humidity" class="information-div"><%= hum  %></div></td>
+        </tr>
+
+        <tr>
+          <td><label for="latitude">Latitude :</label></td>
+          <td><div id="latitude" class="information-div"><%= lat %></div></td>
+        </tr>
+
+        <tr>
+          <td><label for="longitude">Longitude :</label></td>
+          <td><div id="longitude" class="information-div"><%= long %></div></td>
+        </tr>
+
+        <tr>
+          <td><label for="speed">Wind Speed :</label></td>
+          <td ><div id="speed" class="information-div"><%= speed %></div></td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+
+</div>
+
+<%- include("footer") %>
+
+
+<!-- 
+<label for="description">Weather</label>
+<div id="description" class="information-div"><%= des %></div>
+
+<label for="pressure">Pressure</label>
+<div id="pressure" class="information-div"><%= press %></div>
+
+<label for="humidity">Humidity</label>
+<div id="humidity" class="information-div"><%= hum %></div>
+
+<label for="latitude">Latitude</label>
+<div id="latitude" class="information-div"><%= lat %></div>
+
+<label for="longitude">Longitude</label>
+<div id="longitude" class="information-div"><%= long %></div>
+
+<label for="speed">Wind Speed</label>
+<div id="speed" class="information-div"><%= speed %></div> -->

@@ -1,128 +1,113 @@
-
-body,
-h1 {
-  margin: 0;
+body{
+  background-image: url("/image/background.jpeg");
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
 }
 
+/* ------------------------------MAIN-DIV---------------------------------- */
 
-/*--------------------- NAVBAR --------------------------*/
-
-.navbar{
-  background-color: #EEB76B;
-}
-
-.navbar-brand{
-  margin-left: 30px;
-  font-family: 'Mali', cursive;
-  font-size: 2rem;
-  font-weight: bolder;
-  color: black;
-  cursor: pointer;
-}
-
-.nav-item{
-  padding: 10px 10px 10px;
-}
-
-.nav-link{
-  color: black;
-  font-size: 1.5rem;
-  font-family: 'Delius', cursive;
-}
-
-.nav-link:hover{
-  color: #fff;
-  cursor: pointer;
-}
-
-/* -------------------------TOP-DIV----------------------- */
-
-.top-div {  
-  background-color: #E2703A;
-  padding: 100px 70px 100px;
-  color: white;
-  font-family: 'Merienda One', cursive;
-  text-align: center;
-  letter-spacing: 2px;
-  font-size: 30px;
-}
-
-/* -------------------IMAGE------------------ */
-.img-1{
-  position: absolute;
-  top: 100px;
-  width: 200px;
-  height: 200px;
-}
-
-.img-2{
-  position: absolute;
-  top: 100px;
-  right: 20px;
-  width: 200px;
-  height: 200px;
-}
-
-.info{
+.main-div{
+  background-color: aliceblue;
+  margin: 100px;
   display: flex;
-  background-color: #9C3D54;
+  justify-content: space-between;
+  background-color: rgba(138, 184, 245, 0.3);
+  box-shadow: 20px 20px 100px 20px rgb(30, 30, 82);
+  cursor: pointer;
 }
 
-/* --------------------------MIDDLE-DIV----------------------- */
+/* -------------------------------LEFT-DIV------------------------------- */
 
-.middle-div{
-  background-color: #9C3D54;
+.left-div{
+  padding: 50px;
 }
 
-form{
-  padding: 100px;
+.left-div h1{
+  font-family: 'Jomhuria', cursive;
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 400;
 }
 
-label {  
-  color: white;
-  font-family: 'Merienda One', cursive;
-  font-size: 2rem;
+.city{
+  color: whitesmoke;
 }
 
-input{
-  font-size: 1.2rem;
-  font-family: 'Merienda One', cursive;
-  width: 300px;
-  margin:20px 0px 0px;
-  border: 2px solid black;
-  border-radius: 7px;
+.left-div h3{
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.img-1{
+  width: 250px;
+  height: 250px;
+}
+.content-display{
+  position: relative;
+}
+
+.temperature{
+  font-size: 4rem;
+  font-weight: 700;
+  color: whitesmoke;
+}
+
+.image{
+  margin-left: 10px;
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  top: 0px;
+}
+
+/* --------------------------------RIGHT-DIV-------------------------------- */
+
+.right-div{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 50px;
+  background-color: rgba(21, 56, 102, 0.2);
+}
+
+.input-field{
+  margin-bottom: 50px;
+}
+
+#inputArea{
+  padding-bottom: 7px;
+  background-color: transparent;
+  border: 0px solid;
+  border-bottom: 1px solid black;
+  width: 160px;
+  color: #CCC;
   outline: none;
+}
+
+#inputArea::placeholder{
+  color: grey;
 }
 
 .search-button{
-  margin: 20px 0px 0px;
-  font-family: 'Mali', cursive;
-  width: 100px;
+  margin-left: 20px;
+  width: 50px;
   outline: none;
+  border-radius: 0px;
 }
 
 .search-button:hover{
-  background-color:white;
-  color:black;
-  border: 1px solid black;
+  border: 1px solid white;
+  background: transparent;
 }
 
-
-/* ---------------------OUTPUT-DIV-------------------- */
-
-.bottom-div{
-  margin: auto;
-  width: 250px;
-  height: 250px;
-  background-color: whitesmoke;
+.wether-details h3{
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 10px;
 }
 
-/* -------------------------FOOTER--------------------- */
-
-p{
-  background-color: #310B0B;
-  padding: 30px 0px;
-  text-align: center;
+td{
+  padding: 10px 20px 20px 1px;
+  font-size: 1rem;
   color: whitesmoke;
-  margin: 0px;
 }
